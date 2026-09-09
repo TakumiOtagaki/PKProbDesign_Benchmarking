@@ -1,0 +1,30 @@
+Bootstrap: docker
+From: python:2.7-buster
+
+%labels
+    Author codex
+    Description antaRNA runtime image for Python 2.7 on TSUBAME
+
+%post
+    set -eux
+    export CMAKE_BUILD_PARALLEL_LEVEL=1
+    export MAKEFLAGS=-j1
+
+    python -m pip install --no-cache-dir --upgrade "pip<21" "setuptools<45" wheel
+    python -m pip install --no-cache-dir \
+        "numpy==1.16.6" \
+        "scipy==1.2.3" \
+        "networkx==2.2" \
+        ViennaRNA
+
+%test
+    python - <<'PY'
+import RNA
+import numpy
+import scipy
+import networkx
+print("OK")
+PY
+
+%runscript
+    exec python /work/submodules/antarna/antarna/antarna.py "$@"

@@ -1,0 +1,28 @@
+{
+  "parent_commit": "5b5f4d4955d55c3a9b83c0f3ecd829cbbaf5730e",
+  "cparty_commit": "9a2cc19a3f25536cd2c9db06d12ee7fba1e1a62d",
+  "desirna_commit": "bdb490839941daf30fe9119cbc4e2961d57f3a36",
+  "antarna_commit": "13e3d7eca926a2fda601a0c3d45e71c1ccc81018",
+  "linearpartition_commit": "b450fb3e63189073b68d385589035f992080aa3a",
+  "hotknots_commit": "b01a2c9edc6e846d289e27922810e5a8d9000243",
+  "ipknot_commit": "dcaa3695041552df05f4665f3e4227cd617b37f6",
+  "modena_binary_sha256": "17c9fe73682aad6349887072e9d9d3e2a2ab4334c98286941b97222ad968cc08",
+  "target_manifest_sha256": "cb05471f4076bd6ca09ab5b77576838c9f08fe160213ee6371df73f0f8eda891",
+  "cparty_param_sha256": "46e750b6b9f09ebd59cf2f65b388668f4cc2cce6726f2f151c65b50e06a4f6d6",
+  "scfg2_adapter_sha256": "8b0c1e6bf29727b814b62a7498b2a8a050538d7a1f198fbf8a073e93461342a1",
+  "linearpartition_logprob_sha256": "023cbb94094c43cac3f831d0ea828d670915adbfdbd342a3fb8b9152d3d4947a",
+  "linearfold_predict_sha256": "8f060b032ac657371b3cc9b8194a52a74a8383ad27fe40668cae2b6a164239db",
+  "hotspot_predictor_sha256": "7f96bff4466162cf6224a1a051a1930a7376d8d53a2eee59ccea6656c4242541",
+  "hotknots_wrapper_sha256": "c728c5a8570c1d7c1ee5a8da42366bb80edfa7a81df6fe44dc3ab4eaa6e39d59",
+  "ipknot_image_sha256": "8b96854d7855073452503e51399c9c49c778d91f25b20b0a73129f0f42a8935e",
+  "note": "Recorded original run provenance. Hashes identify artifacts; not all artifacts are publicly bundled. No original Git history is imported.",
+  "public_pkprobdesign_snapshot_tested": "27afdd054272dbda8a74c8aad156970a44c23cd8",
+  "sources": {
+    "PKProbDesign": "https://github.com/TakumiOtagaki/PKProbDesign",
+    "DesiRNA": "https://github.com/fryzjergda/DesiRNA",
+    "antaRNA": "https://github.com/RobertKleinkauf/antarna",
+    "IPknot": "https://github.com/satoken/ipknot",
+    "LinearPartition": "https://github.com/TakumiOtagaki/LinearPartition",
+    "HotKnots": "https://github.com/neoaggelos/hotknots"
+  }
+}

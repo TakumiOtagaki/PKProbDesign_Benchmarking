@@ -1,0 +1,122 @@
+{
+  "description": "Allowlisted source extraction. No Git history or submodule contents copied.",
+  "files": {
+    "scripts/evaluation_utils.py": {
+      "source_sha256": "66f0c01e4d49f6e69e9d42883e494e263300b88a91393770b37444a69c491af3",
+      "export_sha256": "66f0c01e4d49f6e69e9d42883e494e263300b88a91393770b37444a69c491af3"
+    },
+    "scripts/compute_benchmark_pvalues.py": {
+      "source_sha256": "dca014d732c410cb1ce7bc5c796618e06b258cefff11659c1833aaaca3890c67",
+      "export_sha256": "dca014d732c410cb1ce7bc5c796618e06b258cefff11659c1833aaaca3890c67"
+    },
+    "scripts/select_common_gbig_representatives.py": {
+      "source_sha256": "302964f858d804aa6acafa8e8a78fd2f6a358a4da081efaa9e1356c32754dd5e",
+      "export_sha256": "302964f858d804aa6acafa8e8a78fd2f6a358a4da081efaa9e1356c32754dd5e"
+    },
+    "scripts/aggregate_common_gbig_four_method.py": {
+      "source_sha256": "09cb06cf79d3376841a4e519d7091e8e688c2750a66084b783c112937c927b0d",
+      "export_sha256": "09cb06cf79d3376841a4e519d7091e8e688c2750a66084b783c112937c927b0d"
+    },
+    "scripts/aggregate_common_gsmall_four_method.py": {
+      "source_sha256": "e7669f45e61c08eb4ae61449f19fc5d83b699ec74163eb2d9483bd240627974a",
+      "export_sha256": "e7669f45e61c08eb4ae61449f19fc5d83b699ec74163eb2d9483bd240627974a"
+    },
+    "scripts/prepare_common_gbig_targets.py": {
+      "source_sha256": "f6ccbc0fba4dfbb3ac9a5b9c39b8d4d4898a61d06210a1d5bba5c404e8f73744",
+      "export_sha256": "f6ccbc0fba4dfbb3ac9a5b9c39b8d4d4898a61d06210a1d5bba5c404e8f73744"
+    },
+    "scripts/prepare_common_gsmall_targets.py": {
+      "source_sha256": "0c835de7e94f16630ecf09db9e5a375fbdee6a046bb3bc8b742ac82db0f1bcb5",
+      "export_sha256": "0c835de7e94f16630ecf09db9e5a375fbdee6a046bb3bc8b742ac82db0f1bcb5"
+    },
+    "scripts/prepare_common_gbig_comparison_candidates.py": {
+      "source_sha256": "a347a3f363ad5dedbcdf7dfb8b3d9cfa1723945aed99d4b0217967ab5b358f3f",
+      "export_sha256": "a347a3f363ad5dedbcdf7dfb8b3d9cfa1723945aed99d4b0217967ab5b358f3f"
+    },
+    "scripts/normalize_common_gbig_desirna_target.py": {
+      "source_sha256": "7ab909704e41f03782ce95275a9f3331fa272886776f6ae0dfc69da22c1f46c9",
+      "export_sha256": "7ab909704e41f03782ce95275a9f3331fa272886776f6ae0dfc69da22c1f46c9"
+    },
+    "scripts/evaluate_candidate_probabilities.py": {
+      "source_sha256": "26d0f2f81d3883595427ba3cf14af7f289880b1dd48be0d05627a111fd7ef5a3",
+      "export_sha256": "26d0f2f81d3883595427ba3cf14af7f289880b1dd48be0d05627a111fd7ef5a3"
+    },
+    "scripts/evaluate_candidate_two_stage_mfe.py": {
+      "source_sha256": "b846506982c4b2946c43a804cfb81eac80c7f5cd09cf52114fe8b0897dcfce3c",
+      "export_sha256": "b846506982c4b2946c43a804cfb81eac80c7f5cd09cf52114fe8b0897dcfce3c"
+    },
+    "scripts/evaluate_candidate_viterbi.py": {
+      "source_sha256": "eb8e1fafec2fb0ed2da18af2407e2e60bd732f6c185059ce05e3164c1366580a",
+      "export_sha256": "eb8e1fafec2fb0ed2da18af2407e2e60bd732f6c185059ce05e3164c1366580a"
+    },
+    "scripts/evaluate_candidate_hotknots_viterbi.py": {
+      "source_sha256": "d3fffbf94cf5fa3d25b646169e0e5ee05f058e47f12cffa5e9e01a82532f3a8f",
+      "export_sha256": "d3fffbf94cf5fa3d25b646169e0e5ee05f058e47f12cffa5e9e01a82532f3a8f"
+    },
+    "scripts/evaluate_candidate_ipknot.py": {
+      "source_sha256": "6c7695ffba3d2f6e7cdb9522f88bac29d702602df85f6ae3d9de8fb819fd70a4",
+      "export_sha256": "6c7695ffba3d2f6e7cdb9522f88bac29d702602df85f6ae3d9de8fb819fd70a4"
+    },
+    "scripts/run_ipknot.py": {
+      "source_sha256": "70e2e86aedba171d139abcdff72bbe426f1d7a6eaae6483447073cdcfe060764",
+      "export_sha256": "70e2e86aedba171d139abcdff72bbe426f1d7a6eaae6483447073cdcfe060764"
+    },
+    "scripts/run_modena.py": {
+      "source_sha256": "8b9a67ea2a0ceaf5d20129791968fde8fda56fd8797ce9253761abd58a57c121",
+      "export_sha256": "8b9a67ea2a0ceaf5d20129791968fde8fda56fd8797ce9253761abd58a57c121"
+    },
+    "scripts/run_antarna.py": {
+      "source_sha256": "9bc9fc0b59a5644cab56848ba8284b8a258d5305d4effc22af7c44e6186353f1",
+      "export_sha256": "9bc9fc0b59a5644cab56848ba8284b8a258d5305d4effc22af7c44e6186353f1"
+    },
+    "scripts/render_modena_inp.py": {
+      "source_sha256": "874706d55c9f89c821d607fc360f3b2977f0c41d5320931ef0d24dbfee6fc18b",
+      "export_sha256": "874706d55c9f89c821d607fc360f3b2977f0c41d5320931ef0d24dbfee6fc18b"
+    },
+    "tests/test_compute_benchmark_pvalues.py": {
+      "source_sha256": "a37e61df2f2b9ec8501c9198861f2393606520c5e0ebb29b449ae12eecde8270",
+      "export_sha256": "a37e61df2f2b9ec8501c9198861f2393606520c5e0ebb29b449ae12eecde8270"
+    },
+    "tests/test_select_common_gbig_representatives.py": {
+      "source_sha256": "d6c873f8c3a264e6bb15d4b2afd665ab04ede31e068fbce7683e706a65ce1f13",
+      "export_sha256": "d6c873f8c3a264e6bb15d4b2afd665ab04ede31e068fbce7683e706a65ce1f13"
+    },
+    "tests/test_aggregate_common_gbig_four_method.py": {
+      "source_sha256": "c027e1d192234a6cf350afdb656c4e5fd5531ca0a46d6a03e6c48626d276f549",
+      "export_sha256": "c027e1d192234a6cf350afdb656c4e5fd5531ca0a46d6a03e6c48626d276f549"
+    },
+    "tests/test_aggregate_common_gsmall_four_method.py": {
+      "source_sha256": "b61858c487133db85ebe57ae5303d3f6aa6fd77f62da75709aca03c3b304146e",
+      "export_sha256": "b61858c487133db85ebe57ae5303d3f6aa6fd77f62da75709aca03c3b304146e"
+    },
+    "tests/test_prepare_common_gbig_targets.py": {
+      "source_sha256": "ce1757ebbe9c3773f8b408a9b57881c88f9b5b1fd8176d551dd9979ea176793c",
+      "export_sha256": "ce1757ebbe9c3773f8b408a9b57881c88f9b5b1fd8176d551dd9979ea176793c"
+    },
+    "tests/test_prepare_common_gsmall_targets.py": {
+      "source_sha256": "2eb2f05cb5f623927641cfec49af9428eb694d8db40e3cb2da6cd1d8c9e9dc93",
+      "export_sha256": "3bf5403c628166fee1d4a66a0bbc96bb658e509942c9704295cd806e872549ba"
+    },
+    "tests/test_normalize_common_gbig_desirna_target.py": {
+      "source_sha256": "491a31580990fa55e61e19897d1146e77787715aae523408ffb4e0a698bf5437",
+      "export_sha256": "491a31580990fa55e61e19897d1146e77787715aae523408ffb4e0a698bf5437"
+    },
+    "tests/test_run_modena.py": {
+      "source_sha256": "af0d33752aef733ca795510e8b1c1292738fb3a4cb8608d4d6af24cc4175865c",
+      "export_sha256": "acc5a0b354fc7aa1ced5e8cd8a97f48c134ce484bef2855a5bfe37ee63c5535f"
+    },
+    "tests/test_evaluate_candidate_hotknots_viterbi.py": {
+      "source_sha256": "1ed818ae6a0b6129d9d7e9855d806a2089b29974ae9bb2eefc8e8c8092d788f6",
+      "export_sha256": "1ed818ae6a0b6129d9d7e9855d806a2089b29974ae9bb2eefc8e8c8092d788f6"
+    },
+    "scripts/wrappers/ipknot": {
+      "source_sha256": "bf928a25e7d24a1aea06cb92cd5a7e62c133a085d59d822b801a6ae9a1b5a52f",
+      "export_sha256": "bf928a25e7d24a1aea06cb92cd5a7e62c133a085d59d822b801a6ae9a1b5a52f"
+    },
+    "scripts/templates/modena_single_target.inp": {
+      "source_sha256": "b286b3b28f22e4478235410fc353488b37d852c3453844fd51e6be937e566697",
+      "export_sha256": "b286b3b28f22e4478235410fc353488b37d852c3453844fd51e6be937e566697"
+    }
+  },
+  "changes": "Scientific scripts unchanged. Test-only portability fixes and standard-library test discovery registration; new compact data export and analysis entry points added."
+}

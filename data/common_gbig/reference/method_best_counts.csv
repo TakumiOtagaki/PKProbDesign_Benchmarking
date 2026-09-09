@@ -1,0 +1,5 @@
+method,method_label,unique_best_count,tied_best_count,best_including_ties,targets_with_any_tie
+pkprobdesign,PKProbDesign,245,0,245,0
+desirna,DesiRNA,6,0,6,0
+modena_ipknot,MODENA (IPknot),3,0,3,0
+antarna_pkiss,antaRNA (pKiss),0,0,0,0

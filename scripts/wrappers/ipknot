@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+DEFAULT_IPKNOT_BIN="$REPO_ROOT/submodules/ipknot/ipknot.sif"
+
+IPKNOT_BIN="${IPKNOT_BIN:-$DEFAULT_IPKNOT_BIN}"
+IPKNOT_TRACE_FILE="${IPKNOT_TRACE_FILE:-}"
+
+run_ipknot() {
+  if [[ -z "$IPKNOT_TRACE_FILE" ]]; then
+    exec "$@"
+  fi
+
+  printf 'start\t%s\t\t%s\n' "$$" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$IPKNOT_TRACE_FILE"
+  local status
+  if "$@"; then
+    status=0
+  else
+    status=$?
+  fi
+  printf 'complete\t%s\t%s\t%s\n' "$$" "$status" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$IPKNOT_TRACE_FILE"
+  return "$status"
+}
+
+if [[ "$IPKNOT_BIN" == *.sif ]]; then
+  APPTAINER_BIN="${APPTAINER_BIN:-$(command -v apptainer || command -v singularity || true)}"
+  if [[ -z "$APPTAINER_BIN" ]]; then
+    echo "ERROR: apptainer/singularity is required to run $IPKNOT_BIN" >&2
+    exit 127
+  fi
+  # MODENA passes a relative input path such as modena.0.sq. TSUBAME's
+  # /work task directory is not an automatic Apptainer bind, so expose the
+  # current directory at the same path and execute there.
+  APPTAINER_ARGS=(--bind "$PWD:$PWD" --pwd "$PWD")
+  if [[ -n "${IPKNOT_APPTAINER_ARGS:-}" ]]; then
+    read -r -a EXTRA_APPTAINER_ARGS <<< "${IPKNOT_APPTAINER_ARGS}"
+    APPTAINER_ARGS+=("${EXTRA_APPTAINER_ARGS[@]}")
+  fi
+  run_ipknot "$APPTAINER_BIN" exec "${APPTAINER_ARGS[@]}" "$IPKNOT_BIN" ipknot "$@"
+  exit $?
+fi
+
+run_ipknot "$IPKNOT_BIN" "$@"
